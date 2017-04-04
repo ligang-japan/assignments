@@ -11,7 +11,7 @@
             var res = meals.split(",");
             $scope.colorflg = false;
             if (res==""){
-                $scope.message="Enter the data!";
+                $scope.message="Please enter data first!";
                 $scope.colorflg = true;
                 return;
             }
