@@ -7,21 +7,27 @@
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+   <script src="app.js"></script>
   </head>
 <body ng-app="LunchCheck">
-    <div class="container" ng-controller="LunchCheckController">
-        <h1>Lunch Checker</h1>
-        <div class="form-group">
-            <input id="lunch-menu" type="text"
-                   placeholder="list comma separated dishes you usually have for lunch"
-                   class="form-control">
-        </div>
-        <div class="form-group">
-            <button class="btn btn-default" ng-click="check();">Check If Too Much</button>
-        </div>
-        <div class="form-group message">
-            <!-- Your message can go here. -->
+    <div ng-controller="LunchCheckController">
+        <div class="container">
+            <h1>Lunch Checker</h1>
+            <div class="form-group">
+                <input id="lunch-menu" type="text" ng-model="meals"
+                       placeholder="list comma separated dishes you usually have for lunch:"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" ng-click="check(meals)">Check If Too Much</button>
+            </div>
+            <div class="form-group message">
+                <span style="color:red" ng-if="colorflg"> {{message}}</span>
+                <span style="color:green" ng-if="!colorflg"> {{message}}</span>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
