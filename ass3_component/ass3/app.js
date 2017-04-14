@@ -14,14 +14,14 @@
                 items: '<',
                 onRemove: '&'
             },
-            controller: foundItemsDirectiveController,
+            controller: ShoppingListDirectiveController,
             controllerAs: 'NID',
             bindToController: true
         };
 
         return ddo;
     }
-    function foundItemsDirectiveController() {
+    function ShoppingListDirectiveController() {
         var list = this;
 
        }
@@ -38,9 +38,7 @@
                 return;
             }
             var promise = MenuSearchService.getMatchedMenuItems(searchTerm).then(function (response) {
-                NID.menu_items = response;
-                console.log(NID.menu_items);
-               
+                  NID.menu_items = response;
                   if (NID.menu_items.length == 0) {
                       NID.showFlag = false;
                   }
@@ -62,16 +60,11 @@
                 method: "GET",
                 url: (ApiBasePath + "/menu_items.json")
             }).then(function (response) {
-                menu_items = [];
-                var item;
+                  menu_items = [];
                   myObj = response.data;
-                  for (var i in myObj.menu_items) {
-                      item = {};
+                for (var i in myObj.menu_items) {
                     if (myObj.menu_items[i].description.indexOf(searchTerm) != -1) {
-                        item.name = myObj.menu_items[i].name;
-                        item.short_name = myObj.menu_items[i].short_name;
-                        item.description = myObj.menu_items[i].description;
-                        menu_items.push(item);
+                        menu_items.push(myObj.menu_items[i].description);
                     }
                 }
                 return menu_items;

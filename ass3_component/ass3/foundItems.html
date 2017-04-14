@@ -1,0 +1,7 @@
+<h3></h3>
+<ol>
+  <li ng-repeat="item in NID.items track by $index">
+   {{ item }}
+    <button ng-click="NID.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ol>
