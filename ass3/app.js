@@ -37,10 +37,9 @@
                 NID.showFlag=false;
                 return;
             }
-            var promise = MenuSearchService.getMatchedMenuItems(searchTerm).then(function (response) {
-                NID.menu_items = response;
-                console.log(NID.menu_items);
-               
+            var promise = MenuSearchService.getMatchedMenuItems(searchTerm).then(function (result) {
+                NID.menu_items = result;
+                              
                   if (NID.menu_items.length == 0) {
                       NID.showFlag = false;
                   }
