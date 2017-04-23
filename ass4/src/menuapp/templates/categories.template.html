@@ -1,0 +1,14 @@
+
+
+<ul>
+    <li ng-repeat="item in $ctrl.items"
+        ui-sref="categories.items({shortName: item.short_name})">
+
+        {{item.short_name}}, {{ item.name }}
+        <br /><br />
+        <div ng-if="$state.is('categories.items',{shortName : item.short_name})" ui-view></div>
+            
+       
+        
+    </li>
+</ul>
