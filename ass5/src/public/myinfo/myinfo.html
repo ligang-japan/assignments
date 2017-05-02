@@ -1,0 +1,62 @@
+﻿
+<div ng-show="MyinfoCtrl.signupFlg">
+    <h2 id="menu-categories-title" class="text-center"><a ui-sref="public.signup">Please sign up first!</a></h2>
+</div>
+<div class="container" >
+    <div ng-hide="MyinfoCtrl.signupFlg">
+        <h2 id="menu-categories-title" class="text-center">Your Registered Information</h2>
+
+        <form name='regForm' class="form-horizontal" novalidate>
+            <div class="from-group">
+                <div class="row">
+                    <div class="control-label col-md-3">User Name:</div>
+
+                    <div class="col-md-6">
+                        {{MyinfoCtrl.user.username}}
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="control-label col-md-3">Email: </div>
+                    <div class="col-md-6">
+                        {{MyinfoCtrl.user.email}}
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <label for="phone" class="control-label col-md-3">Phone Number: </label>
+                    <div class=" col-md-6">
+                        {{MyinfoCtrl.user.phone}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="phone" class="control-label col-md-3">Favorite Menu Number.: </label>
+                    <div class=" col-md-6">
+                        {{MyinfoCtrl.user.shortName}}
+                    </div>
+                </div>
+            </div>
+            <br>
+
+        </form>
+        <div ng-hide="MyinfoCtrl.user.menuFlg" class="alert-danger">
+            No valid menu information available.
+        </div>
+        <div class="menu-item-tile col-md-6" ng-show="MyinfoCtrl.user.menuFlg">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="menu-item-photo">
+                        <img class="img-responsive" width="250" height="150" ng-src="{{MyinfoCtrl.user.basePath}}/images/{{MyinfoCtrl.user.shortName}}.jpg" alt="{{MyinfoCtrl.user.shortName}}">
+                    </div>
+                </div>
+                <div class="menu-item-description col-sm-7">
+                    <h3 class="menu-item-title">{{MyinfoCtrl.user.name}}</h3>
+                    <p class="menu-item-details">{{MyinfoCtrl.user.description}}</p>
+                </div>
+            </div>
+            <hr class="visible-xs">
+        </div>
+
+    </div>
+</div>

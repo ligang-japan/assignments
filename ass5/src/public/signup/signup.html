@@ -1,0 +1,76 @@
+﻿<div class="container">
+    <h2 id="menu-categories-title" class="text-center">Signup Form</h2>
+
+    <form name='regForm' class="form-horizontal" novalidate>
+        <div class="from-group">
+            <div class="row">
+                <div class="control-label col-md-3">User Name:</div>
+
+                <div class="col-md-6">
+                    <input class="form-control" type="text" name="username"
+                           ng-model="reg.user.username"
+                           required
+                           minlength="4"
+                           ng-maxlength="10">
+                    <span ng-if="(regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched">
+                        Username must be at least 4 characters long
+                    </span>
+                    <span ng-if="regForm.username.$error.maxlength && regForm.username.$touched">
+                        Username must not be longer than 10 characters
+                    </span>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="control-label col-md-3">Email: </div>
+                <div class="col-md-6">
+                    <input type="email" name="email" class="form-control"
+                           ng-model="reg.user.email"
+                           required>
+                    <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+                        Must be a valid email address: handle@domain format
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <label for="phone" class="control-label col-md-3">Phone Number: </label>
+                <div class="col-md-6">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone ###-###-####"
+                           ng-model="reg.user.phone"
+                           pattern="(\d{3})-(\d{3})-(\d{4})">
+                    <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+                        Phone must be in the format ###-###-####.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="control-label col-md-3">Favorite Menu Number.: </div>
+            <div class="col-md-6">
+                <input type="text" name="shortName" class="form-control"
+                       ng-model="reg.user.shortName"
+                       required>
+                <span ng-if="regForm.shortName.$invalid && regForm.shortName.$touched">
+                    Must be required
+                </span>
+                <span ng-if="SignupCtrl.menunoShowFlg" class="alert-danger">
+                    <lable>No such menu number exists</lable>
+                </span>
+            </div>
+        </div>
+        <br />
+        <div class="text-center">
+            <button class=" btn btn-primary" ng-disabled="regForm.$invalid"
+                    ng-click="SignupCtrl.submit(reg.user)">
+                Submit
+            </button>
+        </div>
+        <div style="margin-top: 10px;text-align:center">
+            <!--Form valid? {{ regForm.$valid }}-->
+            <span ng-show="SignupCtrl.showFlg">Your information has been saved.</span>
+        </div>
+    </form>
+
+</div>
