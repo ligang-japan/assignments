@@ -1,3 +1,5 @@
+ Once code is integrated into current driver, the defect will be marked as fixed and assigned to the tester. Tester will rerun the test that failed and either close the defect or reopen it to be assigned to development (e.g. fix did not work or there is a regression.
+
 Run a subset of automated tests as a regression to make sure defect fixes did not break anything
 
 World leader for entertainment equipment for business' and end consumers. You will have the opportunity to work with some of the top Fortune 500 companies in the world.
