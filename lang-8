@@ -1,3 +1,61 @@
+Background: I will have a job interview this Friday morning.
+The job is to be a test manager leading three test engineers testing the package software at the client site, an insurance company.
+I will send you scripts for edit whenever I draft something.
+Interview Outline from the Recruiter
+Interview content with NTT Data.
+•	Self-introduction
+•	Explain the current work, please try to cover your experience for testing and insurance industry.
+•	Q&A questions about current project.
+ 
+Language: English
+PM: German
+HR: just a short introduction
+ 
+The interviewer might ask you some questions about:
+•	Why do you want to work at NTT Data?
+•	Your family.
+ 
+Selfintroduction
+I have solid development experience with C#, .net and Java technology, covering the entire software development life cycle. 
+For my jobs in recent years, I have been mainly working at client sites, as a developer, support staff, or system analyst . These jobs have allowed me to interact with business users, as well as other related parties, such as network team, DB team, onsite-vendors, external vendors and offshore developers. Through these jobs, I have exposure to business domain knowledge including financial services industry and life insurance industry, and I am also be able to view the applications from both the system perspective and business perspective.  By system perspective, I mean the system architecture, web server, Database, Enterprise Service Bus, user authentication; and by business perspective, I mean the end to end business data flow. I think such experiences could definitely contribute to software package testing at the client site.
+
+I live with my wife and my 8-year old on. In fact, one of my goals for coming to Japan again in December 2015 is to grow my son into a Chinese Japanese bilingual person. It seems that this goal has been achieved very well. However, I have a big concern over his school education in the future. What if we have to go back to China due to my Job security issue or visa issue at a bad timing, for example, when my son is studying in his middle school? Although I frequently encourage my son to live actively, study hard, and be excellent no matter whether in Japan or China, as a parent, I should offer him more options and I always want to see his happy face.  
+
+In terms of job security, I think I should try to secure a permanent job and constantly update my business knowledge and technical skills.
+
+I investigated a little about your company.
+Your company started in Japan as an ERP service provider, with a headquarter in the US and an offshore development center in India. Your company late joined NTT Data group, resulting in an amazing synergy effect. Your company had the ERP specialized knowledge industry experience, India delivery centers while NTT data group had the financial strength and global IT capabilities. 
+
+You company has been in partnership with test vendors such as HP mercury for many years . I believe that test professionals at your company can be benefited with high end software testing tools and advanced test plans and strategies.
+It seems that your company is still new with the insurance industry. I am sure that the insurance sector will bring a big revenue growth for your company in the future. 
+
+
+I currently support several applications at a life insurance company.
+My current job is also involved with testing.
+We have data center relocation, software upgrade for windows, tomcat, SQL server and so on
+All these activities require software testing.
+
+It seems that most applications are for the insurance underwriting department.
+We also need to develop new insurance products and make changes to existing insurance products. I am personally involved with the IBM ODM development for new product launches and product changes. All these development activities require software testing.
+
+Some are for customer service department.
+WebNayose is an application that supports insurance underwriting. It helps whether the applicant is eligible for the benefit amount he has claimed.
+VictoryOne is an application for payment reconciliation.
+Process 360 is used for application images management.
+All the application forms will be scanned, and stored and managed by this application. 
+Recently I have just taken over the support for our corporate website, where the responsible business users can update the web content of their own divisions.
+
+During software testing, cases are that sometimes an issue is caused by wrong settings, wrong data, or bad interface with other systems and sometimes an issue can even be traced back to business requirement. I think my experience as an application support engineer has also prepared me well for the above scenarios.
+
+I am learning automation test software during my spare time at my current workplace and have used it to automate my routine operations.
+
+Web timesheet entry, periodical password update for a list user accounts.
+
+Why do you want to choose software testing for your next level career?
+First, I think my developer background, application support experience, client site work experience have prepared
+
+
+
 I investigated a little about your company.
 Your company started in Japan as an ERP service provider, with a headquarter in the US and an offshore development center in India. Your company late joined NTT Data group, resulting in an amazing synergy effect. Your company had the ERP specialized knowledge industry experience, india delivery centers while NTT data group had the financial strength and global IT capabilities. 
 
