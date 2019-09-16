@@ -7,3 +7,59 @@ Jaspers
 Try netsh.exe winhttp show proxy command this will print the proxy settings
 http://buki.io/?p=38
 https://www.petrikainulainen.net/programming/spring-framework/spring-batch-tutorial-getting-the-required-dependencies-with-maven/
+package com.SQLServerJDBC;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class SQLDatabaseConnection {
+    // Connect to your database.
+    // Replace server name, username, and password with your credentials
+    public static void main(String[] args) {
+	//jdbc:sqlserver://localhost\SQLEXPRESS:52188
+        String connectionUrl =
+                "jdbc:sqlserver://localhost\\SQLEXPRESS:0;"
+                        + "database=FriendOrganizerDB;"
+                        + "user=newtest;"
+                        + "password=newtest;"
+                        //+ "encrypt=true;"
+                        + "trustServerCertificate=false;"
+                        + "loginTimeout=30;";
+        ResultSet resultSet = null;
+        String insertSql = "INSERT INTO [dbo].[Friend] (FirstName ,LastName,Email) VALUES "
+                + "('NewBike', 'BikeNew', 'ad@fs.com');";
+        try (Connection connection = DriverManager.getConnection(connectionUrl);
+                //Statement statement = connection.createStatement();
+        	PreparedStatement prepsInsertProduct = connection.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
+        	) 
+        {
+            // Code here.
+            System.out.println("Success!");
+            // Create and execute a SELECT SQL statement.
+            //String selectSql = "SELECT count(*) from [dbo].[Friend]";
+            //resultSet = statement.executeQuery(selectSql);
+            prepsInsertProduct.execute();
+            // Retrieve the generated key from the insert.
+            resultSet = prepsInsertProduct.getGeneratedKeys();
+
+            // Print the ID of the inserted row.
+            while (resultSet.next()) {
+                System.out.println("Generated: " + resultSet.getString(1));
+            }
+            // Print results from select statement
+//            while (resultSet.next()) {
+//                System.out.println(resultSet.getString(1));
+//            }
+        }
+        // Handle any errors that may have occurred.
+        catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("failed");
+        }
+    }
+}
+
