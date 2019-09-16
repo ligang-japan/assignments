@@ -1,0 +1,4 @@
+一、SQL Server
+　　TCP開放
+二、Mixed Authentication ModeをEnableする
+　　Login　USERのデータベースマッピング、権限付与をする
