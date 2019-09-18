@@ -1,3 +1,27 @@
+POC　作成手順
+（目次https://thinkit.co.jp/free/tech/4/3/1.html）」
+１．	Jasportリポート単体を作成
+https://thinkit.co.jp/free/tech/4/3/1.html
+DatasourceはPreview時切り替え可能です。
+
+２．JavaアプリケーションからJasportリポートを呼び出す
+　　2.1　ReportプロジェクトからJasportを呼び出す
+　　　　（Source folderもbuild pathに）
+　　2.2　普通のJava ProjectからJasportリポートを呼び出す
+
+http://foolprogrammer.blogspot.com/2015/01/javajasperreport_29.html
+で続行
+JavaアプリケーションでJasperReportを出力する方法
+
+https://www.codeflow.site/ja/article/java__javamail-api-sending-email-via-gmail-smtp-example
+
+PDFの代わりに直接プリンターへの出力
+https://qiita.com/nakani1210/items/18b0e80317c35f6e6756
+
+http://jasperreports.sourceforge.net/sample.reference/printservice/index.html
+PrintServiceReport
+
+
 https://thinkit.co.jp/free/tech/4/4/1.html
 https://community.jaspersoft.com/wiki/working-javabeans-data-adapter-tibco-jaspersoft-studio
 Log4j2実作
