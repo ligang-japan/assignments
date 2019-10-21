@@ -1,0 +1,11 @@
+I summarize my concerns about our current data output approach, i.e., sending print data from Azure Cloud directly to on-premises printer.
+1.	We need to enable Azure Virtual Network, which comes with additional cost and configurations.
+2.	Connection from Azure Cloud to on-premises printer is relatively unreliable. 
+(As pointed out by you the other day, some pooling services are required.)
+This becomes obvious particularly for a daily printing batch. 
+BU may frequently ask for reprint just for connection issues. 
+
+Last time, I proposed the alternative PDF solution with its several advantages to our project management.
+The project management was not very convinced in the security regard.
+
+This time I would like to propose using Azure blob storage container to store the generated PDFs and address the security issues by only allowing particular AD group users to access the container addresses.
