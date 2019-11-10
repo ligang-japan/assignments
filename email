@@ -1,0 +1,15 @@
+Could you guide me Azure solutions for email delivery and PDF print?
+
+<Email Delivery>
+I am planning to send emails from a Java console application that is hosted in Azure cloud.
+The email body needs to be dynamically configured during run time.
+Could we use our company SMTP server for such an email delivery?
+What other options do you think we may have?
+
+<PDF Print>
+Also is it possible to directly print PDF files that are located in an Azure storage blob container without downloading them to a local PC?
+Currently, as you are aware, printing documents are managed through access card authentication. Are you aware of any authentication options that could be used for direct downloads from Azure to printers?
+
+
+When you print any documents from a local PC, you can only print out your documents after you swipe your access card over the sensor of the printer. Will such access card authentication also be available for the above-mentioned direct print?
+Could I just use “Azure Solutions for Email Delivery and PDF Print” as the email subject?
