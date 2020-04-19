@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/55245763/upload-jar-executable-to-azure-and-running
+
+
+set JAVA_HOME=D:\Program Files (x86)\Java\jdk1.8.0_172
+set CLASSPATH=.;%JAVA_HOME%\lib
+set PATH=%JAVA_HOME%\bin;%PATH%
+java -jar <your jar file name>.jar
