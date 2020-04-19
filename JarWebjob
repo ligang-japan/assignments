@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/55245763/upload-jar-executable-to-azure-and-running
+
+
+enter image description here
+
+Then, you can start it on Azure portal, and to see the running logs via Logs button.
+
+Note: for more information about CRON Expression or others, please see the section CRON expressions of the offical tutorial Run Background tasks with WebJobs in Azure App Service.
